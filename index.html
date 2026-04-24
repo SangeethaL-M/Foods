@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!--Inherit Css-->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!--Tailwind Css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Font Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="overall">
+   <p class=" text-center text-[10px] md:text-[20px] bg-taupe-100 p-2 font-normal">Subscribe to our newsletter <span class="font-medium">- mykitchen@gmail.com</span></p>
+    <div class="p-3">   
+        <div class="block  md:flex justify-evenly ">
+            <img src="Assets/images/logo.png" alt="">
+            <div class="flex items-center gap-5">
+                <input type="text" placeholder="Search"  class="text-[20px] border-b border-gray-500 outline-none focus:ring-0 focus:border-black p-0 m-0 leading-none h-12">
+                <i class="bi bi-search w-7 h-7 md:w-10 md:h-10 rounded-full  text-white flex items-center justify-center content-center bg-red-600"></i>
+            </div>
+        </div>
+    </div>
+    <hr class="border-gray-400">
+    <!--Navbar-->
+    <nav class="flex lg:gap-20 py-5  text-[16px] sm:text-[18px] md:text-[20px] font-semibold">
+        <div class="lg:hidden">
+            <button id="menu-btn" class="focus:outline-none text-[16px] ">
+                ☰
+            </button>
+        </div>
+        <ul id="menu" class="hidden flex-col gap-4 mt-4 lg:flex lg:flex-row lg:space-x-6 lg:gap-0">
+        <li><a href="index.html">HOME</a></li>
+       <li><a href="recipe.html">RECIPES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        </ul>
+    </nav>
+    <hr class="border-gray-400">
+<!--hero section-->
+<div>
+    <div class="h-120 w-full hero bg-cover bg-center flex flex-col text-center items-center justify-center lg:px-20">
+        <p class="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-bold text-red-600 py-4">Sharing my love for food</p>
+        <p class="text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-medium py-4">I m excited to share my passion for all things culinary. 
+Food is not just about nourishment: it s an experience 
+that brings people together, evokes memories, and 
+sparks creativity.</p>
+            <div class="flex items-center text-white gap-5 py-4">
+                <button class="flex gap-5 text-[16px] sm:text-[18px] md:text-[20px] font-bold bg-red-600 px-4 py-1 rounded-md hover:text-red-600 hover:bg-olive-50">GET IN TOUCH
+                <img src="Assets/images/arrow icon.png" alt="" class="hover:invert"></button>
+            </div>
+    </div>
+
+</div>
+
+<!--Images-->
+<div class="block md:flex justify-evenly py-10 md:py-15 lg:py-20">
+    <div class="p-2">
+        <a href="chicken.html"> <img src="Assets/images/starter.png" alt="" class="hover:scale-102 transform transition-transform duration-300"></a>
+        <p class="text-[16px] sm:text-[18px] md:text-[20px] text-red-600 font-medium py-2">STARTER</p>
+        <p class="text-[16px] sm:text-[18px] md:text-[20px] font-semibold py-1">Caprese Salad Skewers</p>
+    </div>
+    <div class="p-2">
+        <a href="chicken.html"><img src="Assets/images/mani course.png" alt="" class="hover:scale-102 transform transition-transform duration-300"></a>
+        <p class="text-[16px] sm:text-[18px] md:text-[20px] text-red-600 font-medium py-2">MAIN COURSE</p>
+        <p class="text-[16px] sm:text-[18px] md:text-[20px] font-semibold py-1">Grilled Lemon Herb Chicken</p>
+    </div>
+</div>
+
+<!--Red Box-->
+<div class="flex justify-center items-center">
+<div style="border: 2px solid red;" class="inline-block p-10  ">
+<div class="block md:flex flex-wrap md:gap-2 lg:gap-4 xl:gap-6 items-center justify-evenly ">
+    <div class="items-center text-center">
+        <p class=" text-red-600 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px]">New recipes</p>
+        <p class="font-bold text-red-600 text-[18px] md:text-[20px] lg:text-[26px] xl:text-[30px]">Straight to your inbox</p>
+    </div>
+    <div class="flex items-center gap-5 p-1">
+        <input type="text" placeholder="Enter your name"  class="text-red-600 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px] border-b border-red-600 outline-none focus:ring-0 focus:border-black p-0 m-0 leading-none h-12 font-semibold">
+    </div>
+    <div class="flex items-center gap-5 p-1 ">
+        <input type="text" placeholder="Enter your email address here"  class="field-sizing-content text-red-600 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px] border-b border-red-600 outline-none focus:ring-0 focus:border-black p-0 m-0 leading-none h-12 font-bold">
+        <img src="Assets/images/Image.png" alt="" class="">
+    </div>
+</div>
+</div>
+</div>
+
+<!--Section 1-->
+<div class="flex justify-between p-10">
+    <p class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-bold">Latest Recipes</p>
+    <p class="inline-block rounded-md bg-red-600 text-white px-2 py-1 text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-bold"> <a href="recipe.html">View All <i class="bi bi-arrow-right"></i></a></p>
+</div>
+<div class="p-4">
+<div class="block md:flex flex-wrap lg:flex-nowrap justify-evenly gap-2">
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/latest recipes 1.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Chickpea and<br> sprouts salad</p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/latest recipes 2.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">High protein <br>chocolate mousse</p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/latest recipes 3.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Big mac lamb chops<br>and veggies</p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/latest recipes 4.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Healthy apple <br>crumble</p>
+    </div>
+    </a>
+</div>
+</div>
+<!--Section2-->
+<div class="p-8">
+<div class="bg-red-600 py-10">
+<div class="flex justify-center items-center h-full ">
+
+    <div class="inline-block px-20" style="border: 2px solid white;">
+        <div class="flex flex-col md:flex-row  justify-between items-center gap-10 lg:gap-30 ">
+            <div class="text-white text-center flex flex-col justify-center items-center">
+                <p class="text-[20px] sm:text-[22px] md:text-[24px] font-semibold p-1">Hello there! I am Tiffy.</p>
+                <p class="text-[18px] sm:text-[20px] md:text-[22px] font-normal p-1">Start cooking with me</p>
+                <img src="Assets/images/social media links 3.png" alt="" class="p-1">
+                <p class="text-[16px] sm:text-[18px] md:text-[20px] font-semibold p-1 hover:underline">VIEW MORE</p>
+            </div>
+            <div>
+                <img src="Assets/images/profile.png" alt="" class="p-2">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--Section3-->
+<div class="flex justify-between p-10">
+    <p class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-bold">Readers Favourites</p>
+    <p class="inline-block rounded-md bg-red-600 text-white px-2 py-1 text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-bold"> <a href="blog.html">View All <i class="bi bi-arrow-right"></i></a></p>
+</div>
+<div class="p-4">
+<div class="block md:flex flex-wrap lg:flex-nowrap justify-evenly gap-2">
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/readers fav 1.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Time saving meal<br>prep </p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/readers fav 2.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Toddler friendly <br>foods</p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/readers fav 3.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">10-must try vegan<br>recipes</p>
+    </div>
+    </a>
+    <a href="">
+    <div class="inline-block rounded-3xl shadow-[0_6px_15px_rgb(0,0,0,0.4)]" style="border: 1px solid gray;">
+        <img src="Assets/images/readers fav 4.png" alt="" >
+        <p class="text-center text-[20px] sm:text-[22px]  font-semibold">Canning and <br>preserving methods</p>
+    </div>
+    </a>
+</div>
+</div>
+
+<!--Section 4-->
+<div class="p-5">
+<div class="flex justify-center items-center">
+<div style="border: 2px solid red;" class="block p-8 w-full max-w-6xl mx-auto px-5 md:px-10 lg:px-20 ">
+<div class="flex flex-col justify-center items-center ">
+    <div class="items-center text-center">
+   
+            <p class="font-bold text-red-600 text-[18px] md:text-[20px] lg:text-[26px] xl:text-[30px]">Our Newsletter</p>
+           <p class="  text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px]">Subscribe to our newsletter & keep up with our latest recipes <br>and organized workshops.</p>
+
+ </div>
+    <div class="flex items-center gap-5 p-1 ">
+        <input type="text" placeholder="Enter your email address here"  class="w-full max-w-md text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px] border-b border-gray-500 outline-none focus:ring-0 focus:border-black p-0 m-0 leading-none h-12 font-bold">
+        <img src="Assets/images/arrow icon.png" alt="" class="invert">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Section 5-->
+<div class="p-5">
+    <p class="text-center text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-semibold">Share Your Meals On With Instagram With <span class="text-red-600">#mykitchen</span> <br>& We Will Reward The Meal Of The Month!
+ </p>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap justify-center p-6">
+    <img src="Assets/images/insta 1.png" alt="" class="p-1 w-full max-w-[200px]">
+    <img src="Assets/images/insta 2.png" alt="" class="p-1 w-full max-w-[200px]">
+    <img src="Assets/images/insta 3.png" alt="" class="p-1 w-full max-w-[200px]">
+    <img src="Assets/images/insta 4.png" alt="" class="p-1 w-full max-w-[200px]">
+    <img src="Assets/images/insta 5.png" alt="" class="p-1 w-full max-w-[200px]">
+</div>
+
+
+<!--Footer-->
+
+<div class="flex flex-col items-center text-center justify-center p-2">
+    <div class="p-1">
+        <img src="Assets/images/logo.png" alt="">
+    </div>
+    <p class="p-1 text-[16px] sm:text-[18px] md:text-[20px] font-bold">Healthy recipes for busy people</p>
+    <div class="p-1">
+        <img src="Assets/images/social media links.png" alt="">
+    </div>
+     <div class="flex items-center gap-5 p-1">
+        <input type="text" placeholder="Enter your email address here"  class="field-sizing-content text-[20px] border-b border-gray-500 outline-none focus:ring-0 focus:border-black p-0 m-0 leading-none h-12">
+        <img src="Assets/images/arrow icon.png" alt="" class="invert">
+    </div>
+    <p class="p-1 text-[12px] sm:text-[14px] md:text-[18px] font-normal">*Be informed about the latest recipes and workshops</p>
+</div>
+<div class="p-4 block md:flex justify-evenly">
+    <p class="text-[16px] sm:text-[18px] md:text-[20px] font-bold"><a href="policy.html" class="hover:text-red-600">Privacy Policy</a></p>
+    <p class="text-[16px] sm:text-[18px] md:text-[20px] font-bold">copyrights 2022  <i class="fa fa-copyright"></i>my kitchen</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</div>
+</body>
+</html>

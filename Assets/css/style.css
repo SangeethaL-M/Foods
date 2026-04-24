@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.overall
+{
+    width:90%;
+    margin: auto;
+    font-family: 'Manrope';
+}
+nav a:hover
+{
+    color: red;
+}
+.hero
+{
+    background-image: url('/Assets/images/hero image.png');
+}
